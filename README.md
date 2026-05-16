@@ -8,13 +8,14 @@
 
 
 ### Ссылки на ресурсы:
+````
 https://www.dmosk.ru/miniinstruktions.php?mini=prometheus-stack-docker&ysclid=mp83nt5gx7575760902
 https://habr.com/ru/companies/slurm/articles/314212/
 https://docs.docker.com/guides/go-prometheus-monitoring/compose/
 https://dev.to/rafi021/how-to-set-up-a-monitoring-stack-with-prometheus-grafana-and-node-exporter-using-docker-compose-17cc?ysclid=mp83oz4htm879389756
 https://docs.tantorlabs.ru/tp/6.0/admin/monitoring_with_prometheus_and_grafana.html?ysclid=mp83oww4kd775069262
 https://servermon.ru/blog/instrukcii-manualy/podrobnyy-gayd-razvertyvanie-grafana-prometheus-ehksportery-cherez-docker-compose.html?ysclid=mp83p14bgh834097163
-
+````
 
 ### Команды-запросы сбора метрик
 ````
