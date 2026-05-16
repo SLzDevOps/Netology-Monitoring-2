@@ -7,7 +7,7 @@
 ### Скриншоты - https://github.com/SLzDevOps/Netology-Monitoring-2/tree/main/screenshots
 
 
-
+### Ссылки на ресурсы:
 https://www.dmosk.ru/miniinstruktions.php?mini=prometheus-stack-docker&ysclid=mp83nt5gx7575760902
 https://habr.com/ru/companies/slurm/articles/314212/
 https://docs.docker.com/guides/go-prometheus-monitoring/compose/
@@ -16,24 +16,26 @@ https://docs.tantorlabs.ru/tp/6.0/admin/monitoring_with_prometheus_and_grafana.h
 https://servermon.ru/blog/instrukcii-manualy/podrobnyy-gayd-razvertyvanie-grafana-prometheus-ehksportery-cherez-docker-compose.html?ysclid=mp83p14bgh834097163
 
 
+### Команды-запросы сбора метрик
+````
 CPU Usage
-100 - (avg(rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
+  100 - (avg(rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
 
 Load Average
-node_load1
-node_load5
-node_load15
+  node_load1
+  node_load5
+  node_load15
 
 Filesystem-FreeSpace-%
-(node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"}) * 100
+  (node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"}) * 100
 
 Memory-Free-MB
-node_memory_MemFree_bytes / 1024 / 1024
+  node_memory_MemFree_bytes / 1024 / 1024
 
 Network RX-TX
-rate(node_network_receive_bytes_total{device!~"lo|docker.*|veth.*"}[5m]) * 8 / 1000000
-rate(node_network_transmit_bytes_total{device!~"lo|docker.*|veth.*"}[5m]) * 8 / 1000000
-
+  rate(node_network_receive_bytes_total{device!~"lo|docker.*|veth.*"}[5m]) * 8 / 1000000
+  rate(node_network_transmit_bytes_total{device!~"lo|docker.*|veth.*"}[5m]) * 8 / 1000000
+````
 
 
 
